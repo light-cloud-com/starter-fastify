@@ -15,7 +15,7 @@
 - Fastify 5 with structured logging
 - Binds `0.0.0.0` rather than Fastify's localhost default, which is unreachable from outside the container
 - REST API with health check endpoint
-- Listens on `$PORT`, defaulting to 8080
+- Listens on `$PORT`, defaulting to 3000
 
 ## API Endpoints
 
@@ -37,7 +37,7 @@ npm start
 npm run dev
 ```
 
-The API will be available at `http://localhost:8080`
+The API will be available at `http://localhost:3000`
 
 ## Deploy to Light Cloud
 
@@ -62,7 +62,7 @@ Light Cloud will auto-detect your settings, but you can verify:
 
 | Setting | Value |
 |---------|-------|
-| Port | `8080` |
+| Port | `3000` |
 | Start Command | `npm start` |
 
 ### 5. Deploy
